@@ -1,0 +1,34 @@
+GET http://127.0.0.1:5000/clientes  : Retorna todos os clientes no banco de dados
+
+
+
+GET http://127.0.0.1:5000/clientes/ID   : Retorna um cliente específico com base no ID
+
+
+
+
+
+POST http://127.0.0.1:5000/clientes    : Cria um novo cliente com os dados enviados no JSON
+
+colocar no body na opção raw (não colocar o id e data cadastro)
+
+{
+    "nome": "string",
+    "sobrenome": "string",
+    "email": "string",
+    "telefone": "number",
+    "endereco": "string",
+    "cidade": "string",
+    "estado": "string",
+    "cep": "XXXXX-XXX"
+}
+
+
+
+PUT http://127.0.0.1:5000/clientes/ID    : Atualiza os dados de um cliente que já existe no banco, informar o ID, e no body em formato RAW colocar quais dados quer alterar
+
+http://127.0.0.1:5000/pedidos
+
+http://127.0.0.1:5000/itensPedido
+
+http://127.0.0.1:5000/produtos
